@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sspweb</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        header {
+            background-color: cadetblue;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: fuchsia;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            text-align: right;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        li a {
+            padding: 10px;
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .aboutus {
+            display: flex;
+        }
+
+        .imgs {
+            flex: 25%;
+            margin: 5px;
+        }
+
+        .services {
+            display: flex;
+
+        }
+
+        .service {
+            flex: 25%;
+            margin: 5px;
+            background-color: chocolate;
+        }
+
+        .gallery {
+            display: flex;
+        }
+
+        .video {
+            flex: 50%;
+            margin: 5px;
+        }
+
+        .contactus {
+            display: flex;
+        }
+
+        .map {
+            flex: 50%;
+            margin: 5px;
+            height: 450;
+        }
+
+        .form {
+            flex: 50%;
+            margin: 5px;
+            height: 450;
+        }
+
+        footer {
+            background-color: brown;
+            color: black;
+            padding: 25px;
+        }
+
+        @media(max-width: 600px) {
+
+            .aboutus,
+            .gallery,
+            .services,
+            .contactus {
+                flex-direction: column;
+            }
+
+            li {
+                display: block;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Website Name</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#mainabout">About</a></li>
+            <li><a href="#mainservices">service</a></li>
+            <li><a href="#maingallery">Gallery</a></li>
+            <li><a href="#maincontact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="aboutus">
+        <img src="assets/images/nature.jpg" width="100%" alt="">
+    </div>
+    <section id="mainabout">
+        <h1 style="text-align: center;">About Us</h1>
+        <div class="aboutus">
+
+            <div class="imgs">
+                <img src="assets/images/digital-painting-mountain-with-colorful-tree-foreground.jpg" width="100%">
+            </div>
+            <div class="imgs">
+                <img src="assets/images/digital-painting-mountain-with-colorful-tree-foreground.jpg" width="100%">
+            </div>
+            <div class="imgs">
+                <img src="assets/images/digital-painting-mountain-with-colorful-tree-foreground.jpg" width="100%">
+            </div>
+            <div class="imgs">
+                <img src="assets/images/digital-painting-mountain-with-colorful-tree-foreground.jpg" width="100%">
+            </div>
+        </div>
+    </section>
+    <section id="mainservices">
+        <h1 style="text-align: center;">Service</h1>
+        <div class="services">
+            <div class="service">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ducimus architecto fugiat natus iure
+                    dolorum voluptatem porro illum facilis in voluptas eius incidunt sequi qui, sint ipsum veniam et
+                    molestiae.</p>
+            </div>
+            <div class="service">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ducimus architecto fugiat natus iure
+                    dolorum voluptatem porro illum facilis in voluptas eius incidunt sequi qui, sint ipsum veniam et
+                    molestiae.</p>
+            </div>
+            <div class="service">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ducimus architecto fugiat natus iure
+                    dolorum voluptatem porro illum facilis in voluptas eius incidunt sequi qui, sint ipsum veniam et
+                    molestiae.</p>
+            </div>
+            <div class="service">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ducimus architecto fugiat natus iure
+                    dolorum voluptatem porro illum facilis in voluptas eius incidunt sequi qui, sint ipsum veniam et
+                    molestiae.</p>
+            </div>
+        </div>
+    </section>
+    <section id="maingallery">
+        <h1 style="text-align: center;">Gallery</h1>
+        <div class="gallery">
+            <div class="video">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/t0Q2otsqC4I"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/t0Q2otsqC4I"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <section id="maincontact">
+        <h1 style="text-align: center;">Contact</h1>
+        <div class="contactus">
+            <div class="map">
+                <h1 style="text-align: center;">Map</h1>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242117.70906755843!2d73.69815173111603!3d18.524870612299356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1691408994080!5m2!1sen!2sin"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>"
+            </div>
+            <div class="form">
+                <h1 style="text-align: center;">form</h1>
+                <header style="padding: 20px;">
+                    <h2 style="text-align: center;">PERSONAL DETAILS</h2>
+                    <hr>
+                    <hr>
+                </header>
+                <section style="text-align: center;">
+                    <form>
+                        <label>First Name :</label>
+                        <input type="text" placeholder="Text Is Deafult Value"><br><br>
+                        <label>Last Name :</label>
+                        <input type="text" placeholder="Text Is Deafult Value"><br><br>
+                        <label>Gender :</label>
+                        <label><input type="radio" name="Gender">Male</label>
+                        <label><input type="radio" name="Gender">Female</label><br><br>
+                        <label>Email :</label>
+                        <input type="email" placeholder="Enter email"><br><br>
+                        <label>Mo.No :</label>
+                        <input type="number" placeholder="Enter Number"><br><br>
+                        <label>Date Of Birth :</label>
+                        <input type="date"><br><br>
+                        <label>Age :</label>
+                        <input type="number" placeholder="Enter Age"><br><br>
+                        <label>Address :</label>
+                        <textarea rows="5" cols="30" placeholder="Enter Address"></textarea><br><br>
+                        <button>
+                            <input type="submit">
+                        </button>
+                        <button>
+                            <input type="reset">
+                        </button>
+
+                    </form>
+
+
+                    <section>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h2 style="text-align: center;">Creatby,,,</h2>
+    </footer>
+</body>
+
+</html>
